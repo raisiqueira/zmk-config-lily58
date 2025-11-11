@@ -1,80 +1,6 @@
-layout: {qmk_keyboard: lily58_rotated}
+layout: {zmk_keyboard: lily58}
 layers:
-  Bas: [Esc, '1', '2', '3', '4', '5', '6', '7', '8', '9', '0', '`', ↹, Q, W, E, R, T, Y, U, I, O, P, '-', '$$mdi:apple-keyboard-control$$', A, S, D, F, G, H, J, K,
-    L, ;, '''', '$$mdi:apple-keyboard-shift$$', Z, X, C, V, B, '[', ']', N, M, ',', ., /, '$$mdi:apple-keyboard-shift$$', '$$mdi:apple-keyboard-option$$', '$$mdi:apple-keyboard-command$$',
-    Low, ␣, ⏎, Rai, '$$mdi:backspace-outline$$', '$$mdi:apple-keyboard-command$$']
-  Low:
-  - BT CLR
-  - BT 1
-  - BT 2
-  - BT 3
-  - BT 4
-  - BT 5
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - F6
-  - F7
-  - F8
-  - F9
-  - F10
-  - F11
-  - F12
-  - '`'
-  - '!'
-  - '@'
-  - '#'
-  - $
-  - '%'
-  - ^
-  - AMPS
-  - KP MULTIPLY
-  - (
-  - )
-  - '~'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '-'
-  - KP PLUS
-  - '{'
-  - '}'
-  - '|'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  Rai:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  Default Layer:
   - '`'
   - '1'
   - '2'
@@ -86,7 +12,137 @@ layers:
   - '8'
   - '9'
   - '0'
+  - '='
+  - ↹
+  - Q
+  - W
+  - E
+  - R
+  - T
+  - Y
+  - U
+  - I
+  - O
+  - P
+  - {t: '-', h: Raise Layer}
+  - ESCAPE
+  - A
+  - S
+  - D
+  - F
+  - G
+  - H
+  - J
+  - K
+  - L
+  - ''''
+  - {t: ENTER, h: Lower Layer}
+  - $$mdi:apple-keyboard-shift$$
+  - Z
+  - X
+  - C
+  - V
+  - B
+  - '['
+  - ']'
+  - N
+  - M
+  - ','
+  - .
+  - /
+  - $$mdi:apple-keyboard-shift$$
+  - LEFT CONTROL
+  - {t: Gui+⏎, h: LEFT ALT}
+  - {t: BACKSPACE, h: LEFT COMMAND}
+  - {t: ␣, h: Lower Layer}
+  - {t: ␣, h: Lower Layer}
+  - {t: BACKSPACE, h: RIGHT COMMAND}
+  - {t: ENTER, h: RIGHT ALT}
+  - RIGHT CONTROL
+  Lower Layer:
+  - BT CLR
+  - BT 1
+  - BT 2
+  - BT 3
+  - BT 4
+  - Home
+  - Home
   - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - MUTE
+  - VOLUME UP
+  - '`'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - UP ARROW
+  - {t: ▽, type: trans}
+  - PAGE UP
+  - PAGE UP
+  - {t: ▽, type: trans}
+  - UP ARROW
+  - {t: ▽, type: trans}
+  - PLAY
+  - VOLUME DOWN
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - LEFT ARROW
+  - DOWN ARROW
+  - RIGHT ARROW
+  - PAGE DOWN
+  - PAGE DOWN
+  - ←
+  - ↓
+  - →
+  - {t: ▽, type: trans}
+  - {type: held}
+  - Caps Lock
+  - '['
+  - ']'
+  - '{'
+  - '}'
+  - End
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - End
+  - '|'
+  - ;
+  - ':'
+  - \
+  - Caps Lock
+  - {t: ESCAPE, h: LEFT CONTROL}
+  - {t: ↹, h: LEFT ALT}
+  - {t: DELETE, h: LEFT COMMAND}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: DELETE, h: RIGHT COMMAND}
+  - {t: ↹, h: RIGHT ALT}
+  - {t: RIGHT CONTROL, h: ESCAPE}
+  Raise Layer:
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - KP 7
+  - KP 8
+  - KP 9
+  - KP PLUS
+  - {t: ▽, type: trans}
+  - '`'
+  - '1'
+  - '2'
+  - '3'
+  - '4'
+  - '5'
+  - {t: ▽, type: trans}
+  - KP 4
+  - KP 5
+  - KP 6
+  - KP SUBTRACT
+  - {type: held}
   - F1
   - F2
   - F3
@@ -94,10 +150,10 @@ layers:
   - F5
   - F6
   - {t: ▽, type: trans}
-  - ←
-  - ↓
-  - ↑
-  - →
+  - KP 1
+  - KP 2
+  - KP 3
+  - KP ASTERISK
   - {t: ▽, type: trans}
   - F7
   - F8
@@ -107,17 +163,17 @@ layers:
   - F12
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - KP PLUS
-  - '-'
-  - '='
-  - '['
-  - ']'
-  - \
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - KP 0
+  - .
+  - /
+  - RIGHT SHIFT
+  - LEFT CONTROL
+  - LEFT ALT
+  - LEFT COMMAND
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - RIGHT COMMAND
+  - RIGHT ALT
+  - RIGHT CONTROL
